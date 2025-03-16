@@ -10,6 +10,7 @@ The project used:
 - optional case
   
 Я преследовал целью использовать один тег дважды - двойной проход (это условие моего проекта)
+I pursued the goal of using one tag twice - double pass (this is a pre-requisite of my project)
 
 1. pip install pyscard
 2. create Siri Shortcuts
