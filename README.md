@@ -19,11 +19,16 @@ The project used:
 **Continuous Operation**: Script keeps running indefinitely, only blocking UIDs that have reached their 2-trigger limit
 **Independent Counters**: Track triggers separately for each UID
 4. Добавление большего количества тегов добивается путем изменения кода по аналогии:
-  # Mapping of UIDs to Siri Shortcut sequences
-  
+5 Mapping of UIDs to Siri Shortcut sequences
+  ```
+# Mapping of UIDs to Siri Shortcut sequences
 TARGETS = {
+    "04:01:02:AA:83:6B:85": ["SHORTCUT_A", "SHORTCUT_B"],
+    "04:00:03:AA:83:6B:85": ["SHORTCUT_C", "SHORTCUT_D"],
+    "04:01:06:AA:83:6B:85": ["SHORTCUT_E", "SHORTCUT_F"]
 }
 
+```
 
 ### Behavior:
 | Scan Count | UID 1 (04:01:02:AA:83:6B:85) | UID 2 (04:00:03:AA:83:6B:85) |
