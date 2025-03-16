@@ -20,6 +20,7 @@ The project used:
 **Independent Counters**: Track triggers separately for each UID
 4. Добавление большего количества тегов добивается путем изменения кода по аналогии:
   # Mapping of UIDs to Siri Shortcut sequences
+  
 TARGETS = {
     "04:01:02:AA:83:6B:85": ["SHORTCUT_A", "SHORTCUT_B"],
     
