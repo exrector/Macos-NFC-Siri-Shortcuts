@@ -22,7 +22,9 @@ The project used:
   # Mapping of UIDs to Siri Shortcut sequences
 TARGETS = {
     "04:01:02:AA:83:6B:85": ["SHORTCUT_A", "SHORTCUT_B"],
+    
     "04:00:03:AA:83:6B:85": ["SHORTCUT_C", "SHORTCUT_D"],
+    
     "04:01:06:AA:83:6B:85": ["SHORTCUT_E", "SHORTCUT_F"]
 }
 
