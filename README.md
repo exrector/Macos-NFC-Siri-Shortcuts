@@ -12,12 +12,20 @@ The project used:
 Я преследовал целью использовать один тег дважды - двойной проход (это условие моего проекта)
 
 1. pip install pyscard
-2.  Create Siri Shortcuts
-- Create two shortcuts named **SHORTCUT_A** and **SHORTCUT_B** in the Shortcuts app.
-4. Key Changes:
-1. **Per-UID Limits**: Each UID can only trigger twice
-2. **Continuous Operation**: Script keeps running indefinitely, only blocking UIDs that have reached their 2-trigger limit
-3. **Independent Counters**: Track triggers separately for each UID
+2. create Siri Shortcuts
+- Create two shortcuts named **SHORTCUT_A** and **SHORTCUT_B**  and more in the Shortcuts app.
+3. Key Changes:
+**Per-UID Limits**: Each UID can only trigger twice
+**Continuous Operation**: Script keeps running indefinitely, only blocking UIDs that have reached their 2-trigger limit
+**Independent Counters**: Track triggers separately for each UID
+4. Добавление большего количества тегов добивается путем изменения кода по аналогии:
+  # Mapping of UIDs to Siri Shortcut sequences
+TARGETS = {
+    "04:01:02:AA:83:6B:85": ["SHORTCUT_A", "SHORTCUT_B"],
+    "04:00:03:AA:83:6B:85": ["SHORTCUT_C", "SHORTCUT_D"],
+    "04:01:06:AA:83:6B:85": ["SHORTCUT_E", "SHORTCUT_F"]
+}
+
 
 ### Behavior:
 | Scan Count | UID 1 (04:01:02:AA:83:6B:85) | UID 2 (04:00:03:AA:83:6B:85) |
